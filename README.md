@@ -43,12 +43,14 @@ You can find the correct installation procedure for your machine on the [Install
 ## Required Dependencies
 Be sure to install the required dependencies.
 ```sh
-$ cargo install cargo-generate
 $ cargo install just
+$ cargo install cargo-generate
+$ cargo install cargo-watch
 ```
 
 **just** - Used to simplify the available commands for ease-of-use
 **cargo-generate** - Used to generate new day scaffolding from the provided template
+**cargo-watch** - Watches files inside of the specified directory for changes and auto-runs testing and linting
 
 ## Installation
 Clone the repository with the following command in your terminal or download it through GitHub's website.
