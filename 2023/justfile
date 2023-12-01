@@ -2,8 +2,7 @@ work day:
     cargo watch -x "check -p {{day}}" -s "cargo test -p {{day}}" -s "just lint {{day}}"
 
 lint day:
-    clippy-tracing --action check --exclude target
     cargo clippy -p {{day}}
 
-create day:
+make day:
     cargo generate --path ./_template --name "{{day}}"
