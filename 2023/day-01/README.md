@@ -156,6 +156,10 @@ let output = _input
         let line_iter = std::iter::from_fn(move || {
             let line_mod = &line[index..];
 
+            /**
+             * 3a. It'd be optimal to increment the index in each of these conditional blocks based on the length of the string
+             *       I didn't do that here and it was fine this time, but your mileage may vary.
+             */
             let result = if line_mod.starts_with("one") {
                 Some('1')
             } else if line_mod.starts_with("two") {
