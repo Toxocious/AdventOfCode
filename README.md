@@ -24,6 +24,7 @@
 - [Table of Contents](#table-of-contents)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
+  - [Required Dependencies](#required-dependencies)
   - [Installation](#installation)
   - [Available Commands](#available-commands)
     - [Generate New Day Template](#generate-new-day-template)
@@ -39,7 +40,15 @@ I've opted to use Rust for my Advent of Code runs, so you'll need to install it 
 
 You can find the correct installation procedure for your machine on the [Install Rust](https://www.rust-lang.org/tools/install) page of the official website.
 
-We also use [Just](https://github.com/casey/just) as a command runner, so be sure to install it onto your machine via the installation instructions in their repository's README.
+## Required Dependencies
+Be sure to install the required dependencies.
+```sh
+$ cargo install cargo-generate
+$ cargo install just
+```
+
+**just** - Used to simplify the available commands for ease-of-use
+**cargo-generate** - Used to generate new day scaffolding from the provided template
 
 ## Installation
 Clone the repository with the following command in your terminal or download it through GitHub's website.
