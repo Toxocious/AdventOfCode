@@ -110,7 +110,6 @@ pub fn process(_input: &str) -> miette::Result<String, AocError> {
     let cube_limits = BTreeMap::from([("red", 12), ("green", 13), ("blue", 14)]);
 
     let games = parse_games(_input).expect("Should parse");
-    // dbg!(games);
 
     Ok(games
         .1

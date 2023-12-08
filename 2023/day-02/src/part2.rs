@@ -108,7 +108,6 @@ pub fn process(_input: &str) -> miette::Result<String, AocError> {
     println!("Advent of Code :: Day 02 - Part 2");
 
     let games = parse_games(_input).expect("Should parse");
-    // dbg!(games);
 
     Ok(games
         .1
